@@ -8,7 +8,8 @@ kinda_sick = choice([True, False])
 hate_your_job = choice([True, False])
 sick_days = randint(0, 10)
 
-calling_in_sick = None  # set this to True or False with Boolean Logic and Conditionals!
+# set this to True or False with Boolean Logic and Conditionals!
+calling_in_sick = None
 
 if actually_sick and (sick_days > 0 or sick_days <= 10):
     calling_in_sick = True
