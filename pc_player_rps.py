@@ -6,8 +6,6 @@ print("... rock ...")
 print("... paper ...")
 print("... scissors ...\n")
 
-winner = None
-pc_play = None
 rock = "rock"
 paper = "paper"
 scissors = "scissors"
@@ -19,27 +17,27 @@ elif rand == 1:
 elif rand == 2:
     pc_play = scissors
 
-player1 = input("Enter Player 1's choice: ")
+player = input("Enter Player's choice: ").lower()
 print(f"Computer played: {pc_play}")
     
-if player1:
-    if ((player1 == rock) or (player1 == paper) or (player1 == scissors)):
-        if player1 == pc_play:
+if player:
+    if ((player == rock) or (player == paper) or (player == scissors)):
+        if player == pc_play:
             print("It's a tie!")
         else:
-            if (player1 == rock) and (pc_play == paper):
-                winner = 2
-            elif (player1 == rock) and (pc_play == scissors):
-                winner = 1
-            elif (player1 == paper) and (pc_play == rock):
-                winner = 1
-            elif (player1 == paper) and (pc_play == scissors):
-                winner = 2
-            elif (player1 == scissors) and (pc_play == paper):
-                winner = 1
-            elif (player1 == scissors) and (pc_play == rock):
-                winner = 2
-            print(f"\nAAAANNNNDDD..... The WINNER is Player {winner}!!")
+            if (player == rock) and (pc_play == paper):
+                winner = "computer"
+            elif (player == rock) and (pc_play == scissors):
+                winner = "player"
+            elif (player == paper) and (pc_play == rock):
+                winner = "player"
+            elif (player == paper) and (pc_play == scissors):
+                winner = "computer"
+            elif (player == scissors) and (pc_play == paper):
+                winner = "player"
+            elif (player == scissors) and (pc_play == rock):
+                winner = "computer"
+            print(f"\nAAAANNNNDDD..... The WINNER is >>> {winner}!!")
     else:
         print("Please enter a valid response!")
 else:
