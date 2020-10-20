@@ -1,3 +1,7 @@
+# given two vars, if both positive, print "both positive"
+# if both are negative, print "both negative"
+# otherwise, state which is positive and which is negative
+
 from random import randint
 x = randint(-100, 100)
 while x == 0:

@@ -1,5 +1,3 @@
-# NO TOUCHING ======================================
-
 from random import choice, randint
 
 # randomly assigns values to these four variables
