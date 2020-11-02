@@ -11,6 +11,6 @@ def number_compare(num1=0, num2=0):
     elif (num1 == num2):
         return "Numbers are equal"
     else:
-        "Please enter valid selection"
+        return "Please enter valid selection"
 
 print(number_compare(num1, num2))
