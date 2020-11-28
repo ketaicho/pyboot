@@ -1,3 +1,7 @@
+# program that takes in two inputs from user, a statement to print and a colour choice
+# program should print the statement in the colour of choice,
+# default to 'magenta' if user-selected colour is unavailable
+
 from pyfiglet import figlet_format
 from termcolor import colored
 
