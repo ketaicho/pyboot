@@ -8,6 +8,8 @@ def find_and_replace(fileName, searchWord, replaceWord):
 
     newData = data.replace(searchWord, replaceWord)
 
-    return newData
+    with open(fileName, "w") as n:
+        n.write(newData)
+        n.truncate()
 
-print(find_and_replace('story.txt', 'Alice', 'Teemo'))
+print(find_and_replace('story.txt', 'Alice', 'Colt'))
