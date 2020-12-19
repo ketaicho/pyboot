@@ -5,7 +5,7 @@ class BankAccount:
 
     def deposit(self, dep_amount):
         if float(dep_amount):
-            self.balance = self.balance + dep_amount
+            self.balance += dep_amount
             return self.balance
         else:
             return "Please enter valid amount"
@@ -14,10 +14,11 @@ class BankAccount:
         if float(with_amount):
             if (self.balance - with_amount) < 0:
                 return "Insufficient funds available"
-            self.balance = self.balance - with_amount
+            self.balance -= with_amount
             return self.balance
         else:
             return "Please enter valid amount"
+
 
 acc = BankAccount("Tshepo")
 acc.deposit(20)
